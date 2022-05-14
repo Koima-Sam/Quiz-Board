@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+
+body{
+    background: url("../images/bg.jpg");
+}
+
+.header-container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    
+}
+
+.header-container > h1 {
+    font-size: 45px;
+    display: block;
+
+}
+.header-container > p {
+    margin-top: 40px;
+    font-size: 25px;
+    display: block;
+    font-family: "Poppins";
+
+}
+
+#btnStart{
+    background-color: orange;
+    height: 35px;
+    width: 100px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    margin-top: 60px;
+}
