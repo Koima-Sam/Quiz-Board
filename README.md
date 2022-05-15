@@ -19,7 +19,7 @@ questions to attempt.
 
    
    ## Home page
-   This will be loaded after clicking the link
+   This will be loaded after clicking the link. Click <em>start</em> button to acces the questions page.
 
    ![](https://github.com/Koima-Sam/Quiz-Board/blob/main/Assets/images/home.png)
    
