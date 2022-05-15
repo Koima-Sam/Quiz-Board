@@ -41,32 +41,56 @@ function calcScores(){
 
     if (ans1 === answers.q1){
         total_score++;
-        correct_answers++;
+        correct++;
 
     }
 
     if (ans2 === answers.q2){
         total_score++;
-        correct_answers++;
+        correct++;
 
     }
 
     if (ans3 === answers.q3){
         total_score++;
-        correct_answers++;
+        correct++;
 
     }
 
     if (ans4 === answers.q4){
         total_score++;
-        correct_answers++;
+        correct++;
 
     }
 
     if (ans5 === answers.q5){
         total_score++;
-        correct_answers++;
+        correct++;
 
+    }
+};
+
+//Calculate the score in percentage
+function calcPercentage(){
+    let percentage = (total_score/6)*100;
+
+
+    //comments
+
+    if(percentage >= 80){
+        correct_answers.innerHTML(correct,"out of 6");
+        score.innerHTML(percentage,"%");
+        comment.innerHTML("You have passed excellently!!")
+    }
+    else if(percentage >=50){
+        correct_answers.innerHTML(correct,"out of 6");
+        score.innerHTML(percentage,"%");
+        comment.innerHTML("You have passed fairly!!")
+    }
+    else if(percentage < 50){
+        correct_answers.innerHTML(correct,"out of 6");
+        score.innerHTML(percentage,"%");
+        comment.innerHTML("You have poorly passed! Kindly retake the quiz")
     }
 }
 
