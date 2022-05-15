@@ -25,9 +25,25 @@ let score_container = document.querySelector('.scores');
 btnClear.addEventListener('click', () => {
     questions.reset();
 });
+btnOk.addEventListener("click", () =>{
+    questions.classList.toggle("hide");
+    score_container.style.opacity = 0;
 
+    total_score = 0;
+    correct = 0;
+    window.location.reload();
+})
+
+questions.addEventListener("submit", (e) => {
+    // to prevent reloading of the page
+    e.preventDefault();
+  
+    checkAnswers();
+    calcPercentage();
+    questions.reset();
+  });
 //calculate scores for the answered questions
-function calcScores(){
+function checkAnswers(){
     var userInput = new FormData(questions);
 
     //get selected answers
@@ -42,6 +58,7 @@ function calcScores(){
     if (ans1 === answers.q1){
         total_score++;
         correct++;
+    
 
     }
 
@@ -72,25 +89,33 @@ function calcScores(){
 
 //Calculate the score in percentage
 function calcPercentage(){
-    let percentage = (total_score/6)*100;
-
+    let percentage = (total_score/5) * 100;
 
     //comments
 
     if(percentage >= 80){
-        correct_answers.innerHTML(correct,"out of 6");
-        score.innerHTML(percentage,"%");
-        comment.innerHTML("You have passed excellently!!")
+        correct_answers.innerText =correct+" out of 5";
+        score.innerText = percentage+" %";
+        comment.innerText = ("You have passed excellently!!")
     }
+
+
     else if(percentage >=50){
-        correct_answers.innerHTML(correct,"out of 6");
-        score.innerHTML(percentage,"%");
-        comment.innerHTML("You have passed fairly!!")
+        correct_answers.innerText = correct+" out of 5";
+        score.innerText = percentage+ " %";
+        comment.innerText= "You have passed fairly!!";
     }
+
+
     else if(percentage < 50){
-        correct_answers.innerHTML(correct,"out of 6");
-        score.innerHTML(percentage,"%");
-        comment.innerHTML("You have poorly passed! Kindly retake the quiz")
+        correct_answers.innerText = correct+ " out of 5";
+        score.innerText = percentage+ " %";
+        comment.innerText = "You have poorly passed! Kindly retake the quiz"
     }
-}
+
+
+    score_container.classList.toggle("showscore");
+    questions.classList.toggle("hide");
+};
+
 
