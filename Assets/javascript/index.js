@@ -11,3 +11,9 @@ let answers = {
 
 let questions = document.getElementById("quiz-form");
 let total_score = 0;
+
+
+let correct_answers = document.querySelector('.correct_Answers');
+let score = document.querySelector('.total-score');
+let comment = document.querySelector('.comment');
+let btnOk = document.querySelector('.btn-Ok')
