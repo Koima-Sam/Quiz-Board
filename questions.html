@@ -10,14 +10,14 @@
 </head>
 <body>
     <div class = "questions-container">
-        <form name="questions" id="quiz-form">
+        <form name="quiz" id="quiz-form">
             <h1>Javascript Questions</h1>
             <div class="question">
                 <h3>Question 1</h3>
                 <p>1. What is JS in full</p>
                 <div>
                     
-                    <input type="radio" name="quiz1" id="q1a">
+                    <input type="radio" name="quiz1" id="q1a" value="Javascript">
                     <label for="q1a"> Javascript</label>
         
                 </div>
@@ -88,7 +88,7 @@
                 </div>
                 <div>
                     
-                    <input type="radio" name="quiz3" id="q3">
+                    <input type="radio" name="quiz3" id="q3c">
                     <label for="q3c"> can contain spaces.</label>
                     
                 </div>
@@ -135,8 +135,8 @@
                 <p>5. Which is not a logical operator ?</p>
                 <div>
                     
-                    <input type="radio" name="quiz5" id="q2a">
-                    <label for="q1a"> &&</label>
+                    <input type="radio" name="quiz5" id="q5a">
+                    <label for="q5a"> &&</label>
         
                 </div>
                 <div>
@@ -153,7 +153,7 @@
                 </div>
                 <div>
                     
-                    <input type="radio" name="quiz5" id="q2d">
+                    <input type="radio" name="quiz5" id="q5d">
                     <label for="q5d"> ||</label>
                     
                 </div>
@@ -163,22 +163,23 @@
                 <button class="submit" type="submit"> Submit</button>
                 <button class="clear" type="reset">Clear</button>
             </div>
+            
         </form>
 
+        
+        
+    </div> 
+    <div class="scores">
+        <p class="correct_Answers"></p>
+        <p>Your Score is: </p>
+        <p class="total-score"></p>
+        <p class="comment"></p>
 
-        <div class="scores">
-            <p class="correct_Answers"></p>
-            <p>Your Score is: </p>
-            <p class="total-score"></p>
-            <p class="comment"></p>
-    
-            <button class="btn-Ok">
-                 OK
-            </button>
-    
-        </div>
-        <script src="Assets/javascript/index.js"></script>
+        <button class="btn-Ok">
+             OK
+        </button>
+
     </div>
-    
+    <script src="Assets/javascript/index.js"></script>
 </body>
 </html>

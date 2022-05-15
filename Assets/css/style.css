@@ -48,3 +48,50 @@ h1{
     background-color: greenyellow;
     width: 100px;
 }
+
+
+
+.btn-Ok{
+    background-color: transparent;
+    border: 2px solid #79cbb8;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.scores {
+width: 40%;
+margin: 0 auto;
+background-color: transparent;
+border-radius: 2px;
+border: 5px solid #79cbb8;
+padding: 30px;
+text-align: center;
+transform: translate(-50%,-50%);
+position: absolute;
+bottom: 0;
+left:50%;
+opacity: 0;
+transition: 0.5s;
+
+}
+.total-score {
+font-size: 3rem;
+font-weight: 600;
+}
+.comment,
+.scores p {
+font-size: 1.2rem;
+}
+
+/* toogle classes 8*/
+.showscore {
+bottom: 25%;
+opacity: 1;}
+
+.hide{
+
+display: none;
+}
+
+
