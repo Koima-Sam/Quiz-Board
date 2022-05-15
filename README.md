@@ -9,9 +9,13 @@ questions to attempt.
    
 
    ## Requirements
-   Laptop or Smartphone
-   Browser eg Chrome
-   Internet Connection
+   <ul>
+   <li>Laptop or Smartphone</li>
+   <li>Browser eg Chrome</li>
+   <li> Internet Connection</li>
+   </ul>
+   
+  
 
    
    ## Home page
