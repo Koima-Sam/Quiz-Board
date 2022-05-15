@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class = "questions-container">
-        <form action="#">
+        <form name="questions" id="quiz-form">
             <h1>Javascript Questions</h1>
             <div class="question">
                 <h3>Question 1</h3>
@@ -89,7 +89,7 @@
                 <div>
                     
                     <input type="radio" name="quiz3" id="q3">
-                    <label for="q3c"> can contain spaves.</label>
+                    <label for="q3c"> can contain spaces.</label>
                     
                 </div>
                 <div>
@@ -164,6 +164,19 @@
                 <button class="clear" type="reset">Clear</button>
             </div>
         </form>
+        <div class="scores">
+            <p class="correct_Answers"></p>
+            <p>Your Score is: </p>
+            <p class="total-score"></p>
+            <p class="comment"></p>
+    
+            <button class="ok">
+                 OK
+            </button>
+    
+        </div>
+        <script src="js/index.js"></script>
     </div>
+    
 </body>
 </html>
