@@ -7,6 +7,12 @@ questions to attempt.
    Open your browser and open the link.
    Link to access the website : https://koima-sam.github.io/Quiz-Board/
    
+
+   ## Requirements
+   Laptop or Smartphone
+   Browser eg Chrome
+   Internet Connection
+
    
    ## Home page
    This will be loaded after clicking the link
